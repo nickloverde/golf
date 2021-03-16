@@ -23,3 +23,6 @@
 // The data taken in will be an array with arrays inside it
 // I can map over the data taken in and use [age, handicap]
 
+function openOrSenior(data) {
+    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
